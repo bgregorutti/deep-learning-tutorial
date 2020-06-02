@@ -1,0 +1,118 @@
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{bbm}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{tikz}
+%\usepackage{pdfpages}
+
+\usetheme{Boadilla} %+ color default
+%\usetheme{default}
+%\useoutertheme{bapt}
+
+
+\definecolor{slineColor}{RGB}{81,22,97}
+
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.50\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}
+  \vskip0pt%
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+%\setbeamertemplate{frametitle}[horizontal shading]{left=slineColor, right=white}
+%\setbeamertemplate{frametitle}
+%{
+%    \begin{beamercolorbox}[ht=1.8em,wd=\paperwidth]{frametitle}
+%        \insertframetitle
+%    \end{beamercolorbox}
+%}
+
+
+
+
+
+
+%%%%
+%%%% BLOCK COLORS
+%%%%
+
+\setbeamercolor{block title}{fg=black,bg=blue!50}
+\setbeamercolor{block body}{fg=black,bg=blue!10}
+%\setbeamercolor{block title}{fg=black,bg=slineColor!60}
+
+\setbeamercolor{block title alerted}{fg=black,bg=red!80}
+\setbeamercolor{block body alerted}{fg=black,bg=red!10}
+
+
+%\setbeamercolor{author in head/foot}{bg=slineColor}
+%\setbeamercolor{title in head/foot}{bg=slineColor!80}
+%\setbeamercolor{date in head/foot}{bg=slineColor!60}
+
+%\setbeamercolor{frametitle}{bg=slineColor!80, fg=white}
+%\setbeamercolor{frametitle}{fg=slineColor!80}
+
+%\setbeamercolor{title}{fg=slineColor!80}
+%\setbeamercolor{section in toc}{fg=slineColor!80}
+
+%%%%
+%%%% CONTENTS
+%%%%
+
+%\AtBeginSection[]{
+%	\AtBeginSubsection[]{
+%		\begin{frame}
+%			\begin{flushleft}{\Large Contents }\end{flushleft}
+%			\tableofcontents[currentsection, currentsubsection]
+%		\end{frame} 
+%	}
+%}
+%
+
+\AtBeginSection[]{
+%	\AtBeginSubsection[]{
+		\begin{frame}
+			\begin{flushleft}{\Large Plan }\end{flushleft}
+			\tableofcontents[currentsection, hideallsubsections]
+		\end{frame} 
+%	}
+}
+
+
+
+%%%%
+%%%% LOGOS ET IMAGES
+%%%%
+
+%\pgfdeclareimage[height=0.85cm]{logo-gauche}{/mon/logo/nom_sans_point_ps}
+%\pgfdeclareimage[height=0.85cm]{logo-droite}{/chemin/de/mon/second/logo}
+%\logo{\pgfuseimage{logo-droite}}
+%
+%\setbeamertemplate{sidebar left}
+%{
+%\logo{\pgfuseimage{logo-gauche}}
+%\vfill%
+%\rlap{\hskip0.1cm\insertlogo}%
+%\vskip15pt%
+%}
+
+%\logo{\includegraphics[height=8mm]{C:/Users/LSTA/Documents/LateX/includes/sline.png}}
+%\titlegraphic{\includegraphics[height=8mm]{C:/Users/LSTA/Documents/LateX/includes/sline.png}}
+%\hspace{280pt}
+
